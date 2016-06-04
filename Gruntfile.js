@@ -15,7 +15,7 @@
       dist: {
         src: [
           'src/modules.js',
-          'dist/studentbook.ui.templateCache.js',
+          'dist/studentbook-ui.templateCache.js',
           'src/**/*.js'
         ],
         dest: 'dist/<%= pkg.name %>.js',
@@ -50,7 +50,7 @@
       },
       main: {
         src: ['src/**/*.tpl.html'],
-        dest: 'dist/studentbook.ui.templateCache.js'
+        dest: 'dist/studentbook-ui.templateCache.js'
       },
     },
     jshint: {
@@ -67,7 +67,7 @@
       development: {
         options: {},
         files: {
-          'dist/css/studentbook.ui.css': 'src/modules.less'
+          'dist/css/studentbook-ui.css': 'src/modules.less'
         }
       },
       production: {
@@ -75,7 +75,7 @@
           compress: true
         },
         files: {
-          'dist/css/studentbook.ui.min.css': 'src/modules.less'
+          'dist/css/studentbook-ui.min.css': 'src/modules.less'
         }
       },
     }

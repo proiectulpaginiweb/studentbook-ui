@@ -17,7 +17,7 @@ module.exports = function(config) {
     files: [
       'node_modules/angular/angular.min.js',
       'node_modules/angular-mocks/angular-mocks.js',
-      'dist/studentbook.ui.templateCache.js',
+      'dist/studentbook-ui.templateCache.js',
       'src/modules.js',
       'src/**/*.js',
       'test/**/*.js',
