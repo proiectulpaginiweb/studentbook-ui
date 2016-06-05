@@ -7,23 +7,23 @@
   ])
   .config(['$stateProvider', function($stateProvider) {
     $stateProvider
-      .state('null', {
+      .state('index', {
         url: '/',
         templateUrl: 'views/index.tpl.html'
       })
-      .state('contact', {
-        url: '/contact',
+      .state('index.contact', {
+        url: 'contact',
         templateUrl: 'views/contact.tpl.html'
       })
-      .state('account', {
-        url: '/account',
+      .state('index.account', {
+        url: 'account',
         templateUrl: 'views/account.tpl.html'
       })
-      .state('account.settings', {
+      .state('index.account.settings', {
           url: '/settings',
           templateUrl: 'views/account/settings.tpl.html'
       })
-      .state('account.security', {
+      .state('index.account.security', {
           url: '/security',
           templateUrl: 'views/account/security.tpl.html'
       });
