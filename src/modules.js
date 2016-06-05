@@ -14,6 +14,18 @@
       .state('contact', {
         url: '/contact',
         templateUrl: 'views/contact.tpl.html'
+      })
+      .state('account', {
+        url: '/account',
+        templateUrl: 'views/account.tpl.html'
+      })
+      .state('account.settings', {
+          url: '/settings',
+          templateUrl: 'views/account/settings.tpl.html'
+      })
+      .state('account.security', {
+          url: '/security',
+          templateUrl: 'views/account/security.tpl.html'
       });
   }]);
 
