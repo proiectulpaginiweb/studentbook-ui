@@ -7,9 +7,17 @@
   ])
   .config(['$stateProvider', function($stateProvider) {
     $stateProvider
+      .state('root', {
+        url: '',
+        templateUrl: 'views/index.tpl.html'
+      })
       .state('index', {
         url: '/',
         templateUrl: 'views/index.tpl.html'
+      })
+      .state('index.courses', {
+        url: 'courses',
+        templateUrl: 'views/courses.tpl.html'
       })
       .state('index.contact', {
         url: 'contact',
