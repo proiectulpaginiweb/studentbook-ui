@@ -24,7 +24,7 @@
       $timeout(function() {
         $scope.dataIsLoaded = true;
         $scope.complete();
-      }, 2000);
+      }, 1000);
 
     }]);
 

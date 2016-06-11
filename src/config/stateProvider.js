@@ -38,7 +38,7 @@
         })
         .state('index.account.course', {
             url: '/courses/:courseId',
-            templateUrl: 'views/account/course.tpl.html'
+            templateUrl: 'views/account/courses/course.tpl.html'
         })
         .state('index.account.security', {
             url: '/security',
