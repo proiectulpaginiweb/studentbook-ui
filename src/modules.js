@@ -1,11 +1,17 @@
 (function(){
   'use strict';
 
+  angular.module('studentbook.controllers', []);
+
   angular.module('studentbook.ui', [
     'ui.router',
-    'studentbook-ui.templateCache'
+    'studentbook.controllers',
+    'studentbook-ui.templateCache',
+    'angular-loading-bar'
   ])
-  .config(['$stateProvider', function($stateProvider) {
+  .config(['$stateProvider', 'cfpLoadingBarProvider', function($stateProvider, cfpLoadingBarProvider) {
+    cfpLoadingBarProvider.includeSpinner = false;
+
     $stateProvider
       .state('root', {
         url: '',
