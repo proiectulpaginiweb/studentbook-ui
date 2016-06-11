@@ -7,7 +7,8 @@
     'ui.router',
     'studentbook.controllers',
     'studentbook-ui.templateCache',
-    'angular-loading-bar'
+    'angular-loading-bar',
+    'ui.bootstrap'
   ]);
 
   angular.element(document).ready(function() {
