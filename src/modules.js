@@ -31,6 +31,18 @@
           url: '/settings',
           templateUrl: 'views/account/settings.tpl.html'
       })
+      .state('index.account.profile', {
+          url: '/profile',
+          templateUrl: 'views/account/profile.tpl.html'
+      })
+      .state('index.account.courses', {
+          url: '/courses',
+          templateUrl: 'views/account/courses.tpl.html'
+      })
+      .state('index.account.course', {
+          url: '/courses/:courseId',
+          templateUrl: 'views/account/course.tpl.html'
+      })
       .state('index.account.security', {
           url: '/security',
           templateUrl: 'views/account/security.tpl.html'
