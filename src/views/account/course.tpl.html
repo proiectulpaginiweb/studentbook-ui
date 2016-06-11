@@ -1,16 +1,12 @@
-<div class="row">
-  <div class="col-md-12">
+<div class="row" ng-controller="usersCoursesController">
+  <div class="col-md-12" ng-if="dataIsLoaded">
     <h3>
-      Aplicatii Web cu suport Java
+      {{ course.title }}
       <span class="pull-right">
-        <span class="label label-primary">2016-2017</span>
-        <span class="label label-success">Enrolled</span>
+        <span class="label label-primary">{{ course.years }}</span>
+        <span ng-if="course.isUserEnrolled" class="label label-success">Enrolled</span>
       </span>
     </h3>
-    <p>
-      Cursul este alcatuit din urmatoarele componente: Spring(Java),
-      AngularJS(Javascript), utilitarul Git(GitHub), elemente de HTML si
-      CSS(Twitter Bootstrap).
-    </p>
+    <p>{{ course.description }}</p>
   </div>
 </div>
