@@ -78,7 +78,16 @@
           'dist/css/studentbook-ui.min.css': 'src/modules.less'
         }
       },
-    }
+    },
+    watch: {
+      scripts: {
+        files: ['src/**/*'],
+        tasks: ['default'],
+        options: {
+          spawn: false,
+        },
+      },
+    },
   });
 
   grunt.loadNpmTasks('grunt-contrib-jshint');
@@ -86,6 +95,7 @@
   grunt.loadNpmTasks('grunt-contrib-uglify');
   grunt.loadNpmTasks('grunt-html2js');
   grunt.loadNpmTasks('grunt-contrib-less');
+  grunt.loadNpmTasks('grunt-contrib-watch');
 
   grunt.registerTask('default', [
     'jshint',
