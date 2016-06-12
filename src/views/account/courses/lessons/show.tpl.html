@@ -1,1 +1,6 @@
-<h1>Lesson</h1>
+<div class="row" ng-controller="usersCoursesLessonsController">
+  <div class="col-md-12" ng-if="dataIsLoaded">
+    <h3>{{ lesson.title }}</h3>
+    <p>{{ lesson.description }}</p>
+  </div>
+</div>
