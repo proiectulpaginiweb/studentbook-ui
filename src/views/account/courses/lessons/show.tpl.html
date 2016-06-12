@@ -18,17 +18,14 @@
 
     <div class="col-md-12" ng-if="lesson.userAttendance == 0">
       <h3>Attendance</h3>
-      <form class="form-horizontal">
+      <form ng-submit="addAttendance()" class="form-horizontal">
         <fieldset>
           <div class="form-group">
-            <label for="inputCode" class="col-lg-2 control-label">Code</label>
-            <div class="col-lg-10">
-              <input class="form-control" id="inputCode">
+            <div class="col-md-10">
+              <input class="form-control input-lg" ng-model="attendance" id="inputCode">
             </div>
-          </div>
-          <div class="form-group">
-            <div class="col-lg-10 col-lg-offset-2">
-              <button type="submit" class="btn btn-primary">Submit</button>
+            <div class="col-md-2">
+              <button type="submit" class="btn btn-primary btn-lg">Submit</button>
             </div>
           </div>
         </fieldset>
@@ -49,33 +46,29 @@
 
     <div class="col-md-12">
       <h3>Comments</h3>
-      <div class="media">
+      <div class="media" ng-repeat="comment in lesson.comments">
         <div class="media-left">
-          <a href="#"><img class="media-object" src="https://www.gravatar.com/avatar/00000000000000000000000000000000?s=60"></a>
+          <img class="media-object" src="https://www.gravatar.com/avatar/{{ comment.gravatar }}?s=60">
         </div>
         <div class="media-body">
           <h4 class="media-heading">
-            John Branch
+            {{ comment.fullName }}
             <span class="pull-right">
-              <small>12:02AM, 12 May 2016</small>
+              <small>{{ comment.date | date:'h:mma, d MMMM y' }}</small>
             </span>
           </h4>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis architecto ratione sunt nisi velit doloribus facilis consectetur eius voluptatem rem.
+          <p>{{ comment.content }}</p>
         </div>
       </div>
 
       <h3>Add comment</h3>
-      <form class="form-horizontal">
+      <form ng-submit="addComment()" class="form-horizontal">
         <fieldset>
           <div class="form-group">
-            <label for="inputComment" class="col-lg-2 control-label">Comment</label>
-            <div class="col-lg-10">
-              <textarea class="form-control" rows="3" id="inputComment"></textarea>
+            <div class="col-md-10">
+              <input class="form-control" ng-model="newComment.content" id="inputComment">
             </div>
-          </div>
-
-          <div class="form-group">
-            <div class="col-lg-10 col-lg-offset-2">
+            <div class="col-md-2">
               <button type="submit" class="btn btn-primary">Submit</button>
             </div>
           </div>
