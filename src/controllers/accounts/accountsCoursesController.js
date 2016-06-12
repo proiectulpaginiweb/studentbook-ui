@@ -14,17 +14,65 @@
           {
             id: 1,
             title: 'Curs 1',
-            description: 'Lorem ipsum dolor sit amet.'
+            attended: 54,
+            description: 'Lorem ipsum dolor sit amet.',
+            userAttended: true
           },
           {
             id: 2,
             title: 'Curs 2',
-            description: 'Lorem ipsum dolor sit amet, consectetur adipisicing.'
+            attended: 25,
+            description: 'Lorem ipsum dolor sit amet, consectetur adipisicing.',
+            userAttended: true
           },
           {
             id: 3,
             title: 'Curs 3',
-            description: 'Lorem ipsum dolor sit amet, consectetur.'
+            attended: 9,
+            description: 'Lorem ipsum dolor sit amet, consectetur.',
+            userAttended: true
+          },
+          {
+            id: 4,
+            title: 'Curs 4',
+            attended: 20,
+            description: 'Lorem ipsum dolor sit amet, consectetur.',
+            userAttended: false
+          },
+          {
+            id: 5,
+            title: 'Curs 5',
+            attended: 30,
+            description: 'Lorem ipsum dolor sit amet, consectetur.',
+            userAttended: false
+          },
+          {
+            id: 6,
+            title: 'Curs 6',
+            attended: 46,
+            description: 'Lorem ipsum dolor sit amet, consectetur.',
+            userAttended: false
+          },
+          {
+            id: 7,
+            title: 'Curs 7',
+            attended: 58,
+            description: 'Lorem ipsum dolor sit amet, consectetur.',
+            userAttended: true
+          },
+          {
+            id: 8,
+            title: 'Curs 8',
+            attended: 70,
+            description: 'Lorem ipsum dolor sit amet, consectetur.',
+            userAttended: true
+          },
+          {
+            id: 9,
+            title: 'Curs 9',
+            attended: 71,
+            description: 'Lorem ipsum dolor sit amet, consectetur.',
+            userAttended: true
           }
         ];
 

@@ -19,8 +19,12 @@
         <h4 class="list-group-item-heading">
           {{ lesson.title }}
           <span class="pull-right">
+            <span ng-if="lesson.attended < 10" class="label label-warning">{{ lesson.attended }} attended</span>
+            <span ng-if="lesson.attended >= 10 && lesson.attended <= 30" class="label label-primary">{{ lesson.attended }} attended</span>
+            <span ng-if="lesson.attended > 30" class="label label-success">{{ lesson.attended }} attended</span>
             <span class="label label-default">Lesson</span>
-            <span class="label label-success">+1</span>
+            <span ng-if="lesson.userAttended" class="label label-success">+1</span>
+            <span ng-if="!lesson.userAttended" class="label label-danger">+0</span>
           </span>
         </h4>
         <p class="list-group-item-text">

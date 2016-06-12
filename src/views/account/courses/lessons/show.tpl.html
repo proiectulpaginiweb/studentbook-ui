@@ -1,6 +1,66 @@
 <div class="row" ng-controller="accountsCoursesLessonsController">
-  <div class="col-md-12" ng-if="dataIsLoaded">
-    <h3>{{ lesson.title }}</h3>
-    <p>{{ lesson.description }}</p>
+  <div ng-if="dataIsLoaded">
+    <div class="col-md-12">
+      <h3>
+        {{ lesson.title }}
+        <span class="pull-right">
+          <span ng-if="lesson.attended < 10" class="label label-warning">{{ lesson.attended }} attended</span>
+          <span ng-if="lesson.attended >= 10 && lesson.attended <= 30" class="label label-primary">{{ lesson.attended }} attended</span>
+          <span ng-if="lesson.attended > 30" class="label label-success">{{ lesson.attended }} attended</span>
+          <span class="label label-default">Lesson</span>
+          <span ng-if="lesson.userAttended" class="label label-success">+1</span>
+          <span ng-if="!lesson.userAttended" class="label label-danger">+0</span>
+        </span>
+      </h3>
+      <p>{{ lesson.description }}</p>
+    </div>
+
+    <div class="col-md-12">
+      <h3>Files</h3>
+      <table class="table table-striped">
+        <tbody>
+          <tr>
+            <td>curs1.pdf</td>
+            <td class="pull-right"><button class="btn btn-success btn-xs">Download</button></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="col-md-12">
+      <h3>Comments</h3>
+      <div class="media">
+        <div class="media-left">
+          <a href="#"><img class="media-object" src="https://www.gravatar.com/avatar/00000000000000000000000000000000?s=60"></a>
+        </div>
+        <div class="media-body">
+          <h4 class="media-heading">
+            John Branch
+            <span class="pull-right">
+              <small>12:02AM, 12 May 2016</small>
+            </span>
+          </h4>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis architecto ratione sunt nisi velit doloribus facilis consectetur eius voluptatem rem.
+        </div>
+      </div>
+
+      <h3>Add comment</h3>
+      <form class="form-horizontal">
+        <fieldset>
+          <div class="form-group">
+            <label for="inputComment" class="col-lg-2 control-label">Comment</label>
+            <div class="col-lg-10">
+              <textarea class="form-control" rows="3" id="inputComment"></textarea>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <div class="col-lg-10 col-lg-offset-2">
+              <button type="submit" class="btn btn-primary">Submit</button>
+            </div>
+          </div>
+        </fieldset>
+      </form>
+    </div>
   </div>
 </div>
