@@ -2,7 +2,7 @@
   'use strict';
 
   angular.module('studentbook.controllers')
-    .controller('usersCoursesController', [
+    .controller('accountsCoursesController', [
       '$scope',
       'cfpLoadingBar',
       '$timeout',
