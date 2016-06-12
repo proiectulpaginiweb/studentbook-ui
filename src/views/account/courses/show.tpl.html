@@ -23,8 +23,9 @@
             <span ng-if="lesson.attended >= 10 && lesson.attended <= 30" class="label label-primary">{{ lesson.attended }} attended</span>
             <span ng-if="lesson.attended > 30" class="label label-success">{{ lesson.attended }} attended</span>
             <span class="label label-default">Lesson</span>
-            <span ng-if="lesson.userAttended" class="label label-success">+1</span>
-            <span ng-if="!lesson.userAttended" class="label label-danger">+0</span>
+            <span ng-if="lesson.userAttendance > 0" class="label label-success">+1</span>
+            <span ng-if="lesson.userAttendance == 0" class="label label-warning">+0</span>
+            <span ng-if="lesson.userAttendance < 0" class="label label-danger">-1</span>
           </span>
         </h4>
         <p class="list-group-item-text">
