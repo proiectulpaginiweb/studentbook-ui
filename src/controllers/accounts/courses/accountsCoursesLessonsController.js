@@ -14,7 +14,7 @@
           title: 'Curs 1',
           attended: 20,
           description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet saepe in qui adipisci, optio aliquam culpa, excepturi repellendus, id numquam delectus magnam sequi non ratione. Minus unde ab assumenda, beatae minima eaque expedita at tempora voluptatem quisquam. Commodi ratione quia tempora nobis debitis, minus voluptatum voluptates dolorum assumenda aliquid, ipsam.',
-          userAttendance: 0
+          userAttendance: -1
         };
 
         $scope.start = function() {

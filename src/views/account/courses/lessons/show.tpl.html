@@ -16,7 +16,7 @@
       <p>{{ lesson.description }}</p>
     </div>
 
-    <div class="col-md-12" ng-if="lesson.userAttendance !== 0">
+    <div class="col-md-12" ng-if="lesson.userAttendance == 0">
       <h3>Attendance</h3>
       <form class="form-horizontal">
         <fieldset>
