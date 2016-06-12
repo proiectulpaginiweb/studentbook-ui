@@ -8,6 +8,14 @@
           url: '',
           templateUrl: 'views/index.tpl.html'
         })
+        .state('login', {
+          url: '/login',
+          templateUrl: 'views/auth/login.tpl.html'
+        })
+        .state('register', {
+          url: '/register',
+          templateUrl: 'views/auth/register.tpl.html'
+        })
         .state('index', {
           url: '/',
           templateUrl: 'views/index.tpl.html'
