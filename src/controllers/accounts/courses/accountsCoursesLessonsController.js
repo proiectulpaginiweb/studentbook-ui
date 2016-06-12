@@ -30,8 +30,15 @@
           id: 1,
           title: 'Curs 1',
           attended: 20,
-          description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet saepe in qui adipisci, optio aliquam culpa, excepturi repellendus, id numquam delectus magnam sequi non ratione. Minus unde ab assumenda, beatae minima eaque expedita at tempora voluptatem quisquam. Commodi ratione quia tempora nobis debitis, minus voluptatum voluptates dolorum assumenda aliquid, ipsam.',
           userAttendance: 0,
+          description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet saepe in qui adipisci, optio aliquam culpa, excepturi repellendus, id numquam delectus magnam sequi non ratione. Minus unde ab assumenda, beatae minima eaque expedita at tempora voluptatem quisquam. Commodi ratione quia tempora nobis debitis, minus voluptatum voluptates dolorum assumenda aliquid, ipsam.\n' +
+                       '* Element 1\n' +
+                       '* Element 2\n' +
+                       '```bash\n' +
+                       ''+
+                       '$ ls && pwd \n'+
+                       ''+
+                       '```',
           comments: [
             {
               gravatar: '00000000000000000000000000000000',

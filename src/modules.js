@@ -8,7 +8,8 @@
     'studentbook.controllers',
     'studentbook-ui.templateCache',
     'angular-loading-bar',
-    'ui.bootstrap'
+    'ui.bootstrap',
+    'ng-showdown'
   ]);
 
   angular.element(document).ready(function() {
