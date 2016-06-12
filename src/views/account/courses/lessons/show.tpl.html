@@ -15,6 +15,25 @@
       <p>{{ lesson.description }}</p>
     </div>
 
+    <div class="col-md-12" ng-if="!lesson.userAttended">
+      <h3>Attendance</h3>
+      <form class="form-horizontal">
+        <fieldset>
+          <div class="form-group">
+            <label for="inputCode" class="col-lg-2 control-label">Code</label>
+            <div class="col-lg-10">
+              <input class="form-control" id="inputCode">
+            </div>
+          </div>
+          <div class="form-group">
+            <div class="col-lg-10 col-lg-offset-2">
+              <button type="submit" class="btn btn-primary">Submit</button>
+            </div>
+          </div>
+        </fieldset>
+      </form>
+    </div>
+
     <div class="col-md-12">
       <h3>Files</h3>
       <table class="table table-striped">
