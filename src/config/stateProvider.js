@@ -37,14 +37,14 @@
             templateUrl: 'views/account/security.tpl.html'
         })
 
-
-
+        /*
+         * Courses
+         */
         .state('index.account.courses', {
             abstract: true,
             url: '/courses',
             templateUrl: 'views/ui-view.tpl.html'
         })
-
         .state('index.account.courses.index', {
             url: '',
             templateUrl: 'views/account/courses/index.tpl.html'
@@ -54,8 +54,9 @@
             templateUrl: 'views/account/courses/show.tpl.html'
         })
 
-
-
+        /*
+         * Courses lessons
+         */
         .state('index.account.courses.lessons', {
             abstract: true,
             url: '/:courseId/lessons',
@@ -64,6 +65,19 @@
         .state('index.account.courses.lessons.show', {
             url: '/:lessonId',
             templateUrl: 'views/account/courses/lessons/show.tpl.html'
+        })
+
+        /*
+         * Courses homeworks
+         */
+        .state('index.account.courses.homeworks', {
+            abstract: true,
+            url: '/:courseId/homeworks',
+            templateUrl: 'views/ui-view.tpl.html'
+        })
+        .state('index.account.courses.homeworks.show', {
+            url: '/:homeworkId',
+            templateUrl: 'views/account/courses/homeworks/show.tpl.html'
         });
     }]);
 

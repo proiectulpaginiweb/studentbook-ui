@@ -28,6 +28,19 @@
           }
         ];
 
+        $scope.homeworks = [
+          {
+            id: 1,
+            title: 'Homework 1',
+            description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique, nesciunt!'
+          },
+          {
+            id: 2,
+            title: 'Homework 2',
+            description: 'Lorem ipsum dolor sit amet, consectetur.'
+          }
+        ];
+
         $scope.course = {
           id: 1,
           title: 'Aplicatii Web cu suport Java',
