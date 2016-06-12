@@ -37,8 +37,21 @@
                        '```bash\n' +
                        ''+
                        '$ ls && pwd \n'+
-                       ''+
-                       '```',
+                       ':+1: \n'+
+                       '```' +
+                       '\n'+
+                       '### HTML Hello world example\n'+
+                       '```html\n'+
+                       '<!DOCTYPE html>\n'+
+                       '<html> \n' +
+                       '  <head> \n'+
+                       '    <title>Hello world!</title> \n'+
+                       '  </head> \n'+
+                       '  <body> \n'+
+                       '    <h1>Hello world!</h1> \n'+
+                       '  </body> \n'+
+                       '</html> \n'+
+                       '```\n',
           comments: [
             {
               gravatar: '00000000000000000000000000000000',
