@@ -32,17 +32,38 @@
             url: '/profile',
             templateUrl: 'views/account/profile.tpl.html'
         })
-        .state('index.account.courses', {
-            url: '/courses',
-            templateUrl: 'views/account/courses.tpl.html'
-        })
-        .state('index.account.course', {
-            url: '/courses/:courseId',
-            templateUrl: 'views/account/courses/course.tpl.html'
-        })
         .state('index.account.security', {
             url: '/security',
             templateUrl: 'views/account/security.tpl.html'
+        })
+
+
+
+        .state('index.account.courses', {
+            abstract: true,
+            url: '/courses',
+            templateUrl: 'views/ui-view.tpl.html'
+        })
+
+        .state('index.account.courses.index', {
+            url: '',
+            templateUrl: 'views/account/courses/index.tpl.html'
+        })
+        .state('index.account.courses.show', {
+            url: '/:courseId',
+            templateUrl: 'views/account/courses/show.tpl.html'
+        })
+
+
+
+        .state('index.account.courses.lessons', {
+            abstract: true,
+            url: '/:courseId/lessons',
+            templateUrl: 'views/ui-view.tpl.html'
+        })
+        .state('index.account.courses.lessons.show', {
+            url: '/:lessonId',
+            templateUrl: 'views/account/courses/lessons/show.tpl.html'
         });
     }]);
 
